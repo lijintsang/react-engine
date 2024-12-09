@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+
+# production
+dist
+
+packages/*/es/**
+
+.vscode
+.idea
+.turbo
+
+package-lock.json
+yarn.lock
+yarn-error.log
+.DS_Store
