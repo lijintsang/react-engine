@@ -46,7 +46,8 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: {
-                localIdentName: '[local]___[hash:base64:5]', // name文件 local类名
+                // [name]___[local]___[hash:base64:5] name文件 local类名
+                localIdentName: '[local]___[hash:base64:5]',
               },
             },
           },
