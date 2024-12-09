@@ -1,6 +1,8 @@
+import styles from './index.less';
+
 const Home = () => {
   return (
-    <div className="text">
+    <div className={styles.text}>
       home
     </div>
   );

@@ -41,8 +41,22 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
-          'css-loader',
-          'less-loader',
+          // 'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true, // 如果需要模块化
+            },
+          },
+          // 'less-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                javascriptEnabled: true, // 启用 Less 的 JS
+              },
+            },
+          },
           {
             loader: 'postcss-loader',
             options: { postcssOptions: { plugins: [require('autoprefixer')] } },
