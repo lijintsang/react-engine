@@ -23,6 +23,6 @@
   },
   "include": [
     "src",
-    "typings.d.ts" // 确保声明文件包含在内
+    "type.d.ts" // 确保声明文件包含在内
   ]
 }

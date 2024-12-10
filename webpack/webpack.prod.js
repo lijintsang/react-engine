@@ -30,12 +30,14 @@ const config = {
               只移除 console.log
             */
             pure_funcs: ['console.log'],
-            sourceMap: true, // 生成 Source Map
           },
+          // 从 5.x 开始，terser-webpack-plugin 重构了内部逻辑，默认集成并行（多线程）压缩
+          // 利用多线程进行代码压缩，从而加速构建过程， 尤其是代码量较大时
         },
       }),
     ],
   },
+  devtool: 'source-map', // 启用 Source Map
 };
 
 const mergedConfig = webpackMerge.merge(baseConfig, config);
