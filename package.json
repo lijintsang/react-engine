@@ -9,6 +9,7 @@
     "start": "webpack serve --config webpack/webpack.dev.js"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
     "autoprefixer": "^10.4.20",
