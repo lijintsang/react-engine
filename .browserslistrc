@@ -1,0 +1,18 @@
+# Browserslist configuration
+# 用于定义项目需要支持的目标浏览器范围。
+# 这里的配置主要针对现代浏览器，优化性能和文件体积。
+
+# 支持最近两个版本的主流现代浏览器
+last 2 versions
+
+# 包含全球市场份额大于 0.5% 的浏览器
+> 0.5%
+
+# 排除已停止维护的浏览器（如 IE 11）
+not dead
+
+# 确保不包含 Opera Mini，它的特性支持有限
+not op_mini all
+
+# 可选：如果需要排除 Safari 版本小于 13，可以启用以下规则
+# Safari >= 13
