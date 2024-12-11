@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
+    // 编译后的文件将被输出到 dist 目录
+    "outDir": "./dist",
+    // 源文件的根目录
+    "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
     "target": "es5",
     "lib": ["dom", "es5", "es6", "es7", "dom.iterable", "esnext"],
+    // 允许引入 .js 文件
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,10 +24,16 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react-jsx",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    // 避免 .js 文件被推断为 any 时报错
+    "noImplicitAny": false,
+    // 如果不想对 JS 文件进行类型检查，可以禁用它
+    "checkJs": false
   },
   "include": [
     "src",
     "type.d.ts" // 确保声明文件包含在内
-  ]
+  ],
+  // 确保不编译输出目录
+  "exclude": ["node_modules", "dist"]
 }
