@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,cAEE,UAAF","sources":["webpack://client4/./src/pages/Home/index.less"],"sourcesContent":[".text {\n  // display: flex;\n  color: blue;\n}"],"names":[],"sourceRoot":""}
