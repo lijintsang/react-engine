@@ -1,7 +1,10 @@
+// webpack.config.js
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
+const proxyConfig = require('../proxy.config.ts'); // 引入 proxy 配置
 
 module.exports = {
   entry: './src/index.tsx', // 入口文件
@@ -116,6 +119,7 @@ module.exports = {
     // 热更新
     hot: true,
     // port: 3000,
+    proxy: proxyConfig, // 使用数组形式的代理配置
   },
   // 开发模式
   mode: 'development',
